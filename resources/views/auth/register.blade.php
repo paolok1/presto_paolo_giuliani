@@ -7,6 +7,15 @@
     </div>
     <div class="row justify-content-center align-items-center height-custom">
         <div class="col-12 col-md-6">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <form method="POST"
                   action="{{ route('register') }}" class="bg-secondary-subtle shadow rounded p-5 ">
                 @csrf
