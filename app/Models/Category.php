@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Category extends Model
 {
 
-    public function article() : HasMany
+    public function articles() : HasMany
     {
         return $this->hasMany(Article::class);
     }

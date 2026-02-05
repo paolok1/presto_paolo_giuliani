@@ -72,4 +72,10 @@
     <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
   <!-- Copyright -->
+
+  <div class="col-md-5 offset-md-1 mb-3 text-center">
+    <h5>Vuoi diventare revisore?</h5>
+    <p>Cliccando il bottone in basso farai richiesta al nostro Admin</p>
+    <a href="{{ route('become.revisor') }}" class="btn btn-success">Diventa revisore</a>
+  </div>
 </footer>

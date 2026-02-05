@@ -24,4 +24,16 @@ public function category() : BelongsTo
    protected $fillable=[
         'title', 'description', 'price', 'category_id', 'user_id'
    ];
+
+   public function setAccepted($value)
+   {
+    $this->is_accepted = $value;
+    $this->save();
+    return true;
+   }
+
+   public static function toBeRevisedCount(){
+    return Article::where('is_accepted', null)->count();
+   }
+
 }
