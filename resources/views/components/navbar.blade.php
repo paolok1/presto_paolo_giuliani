@@ -19,6 +19,7 @@
                   Search</button>
               </div>
           </form>
+
           
       @auth
       <li class="nav-item dropdown">
@@ -75,7 +76,11 @@
       @endauth
       </ul>
     </div>
+    <x-_locale lang="it" />
+    <x-_locale lang="en" />
+    <x-_locale lang="es" />
   </div>
+
 </nav>
           
         
