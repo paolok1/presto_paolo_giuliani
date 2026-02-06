@@ -1,0 +1,12 @@
+.img-preview{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+}
+
+.carousel-item img{
+    height: 400px;
+    object-fit: cover; /* Ritaglia l'immagine per riempire lo spazio senza distorcerla */
+}
