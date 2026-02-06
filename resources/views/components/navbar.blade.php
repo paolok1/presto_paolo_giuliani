@@ -9,6 +9,9 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="{{ route('homepage') }}">Home</a>
         </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{ route ('article.index' )}}">Tutti gli articoli</a>
+          </li>
       @auth
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -21,9 +24,7 @@
           <li>
             <hr class="dropdown-divider">
           </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route ('article.index' )}}">Tutti gli articoli</a>
-          </li>
+
         </ul>
       </li>
       @if(Auth::user()->is_revisor)
