@@ -20,4 +20,6 @@ class SetLocaleMiddleware
         App::setLocale($localeLanguage);
         return $next($request);
     }
+
+
 }

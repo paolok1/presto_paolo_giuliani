@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
@@ -8,6 +9,7 @@ use App\Http\Controllers\RevisorController;
 
 
 // PublicController
+
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 Route::get('/search/article', [PublicController::class, 'searchArticles'])->name('article.search');
 Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
