@@ -9,20 +9,27 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::table('images', function (Blueprint $table) {
-            //
-        });
-    }
+public function up(): void
+{
+    Schema::table('images', function (Blueprint $table) {
+        $table->text('labels')->nullable();
+        $table->string('adult')->nullable();
+        $table->string('spoof')->nullable();
+        $table->string('medical')->nullable();
+        $table->string('violence')->nullable();
+        $table->string('racy')->nullable();
+    });
+}
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::table('images', function (Blueprint $table) {
-            //
-        });
-    }
+
+/**
+ * Reverse the migrations.
+*/
+
+public function down(): void
+{
+    Schema::table('images', function (Blueprint $table) {
+        $table->dropColumn(['labels', 'adult', 'spoof', 'racy', 'medical', 'violence']);
+    });
+}
 };

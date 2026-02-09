@@ -32,7 +32,7 @@
                         @endif
                     </div>
                 @else
-                    <img src="https://picsum.photos/600/400" class="img-fluid rounded shadow" alt="Nessuna foto inserita">
+                    <img src="https://picsum.photos/300/300" class="img-fluid rounded shadow" alt="Nessuna foto inserita">
                 @endif
             </div>
 
