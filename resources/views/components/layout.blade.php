@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>{{ $title ?? 'Presto.it' }}</title>
 </head>
-<body class="d-flex flex-column min-vh-100"">
+<body class="d-flex flex-column min-vh-100">
     <x-navbar/>
 
     <main class="grow">

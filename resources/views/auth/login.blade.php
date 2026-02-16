@@ -2,7 +2,7 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-12 text-center">
-            <h1 class="display-4 pt-5">ACCEDI</h1>
+            <h1 class="display-4 pt-5">{{ __('ui.login') }}</h1>
         </div>
     </div>
     <div class="row justify-content-center align-items-center height-custom">
@@ -18,11 +18,13 @@
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password">
             </div>
-            <button type="submit" class="btn btn-primary">Accedi</button>
+            <button type="submit" class="btn btn-primary">{{ __('ui.login') }}</button>
             </form>
         </div>
     </div>
-
+    <x-_locale lang="it" />
+    <x-_locale lang="en" />
+    <x-_locale lang="es" />
 </div>
 
 </x-layout>

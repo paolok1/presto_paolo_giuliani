@@ -15,8 +15,8 @@
           <form class="d-flex ms-auto" role="search" action="{{ route('article.search') }}" method="GET">
               <div class="input-group">
                 <input type="search" name="query" class="form-control" placeholder="Search" aria-label="search">
-                <button type="submit" class="input-group-text btn btn-outline-dark" id="basic-addon2">
-                  Search</button>
+                <button type="submit" class="input-group-text btn btn-outline-dark" id="basic-addon2">{{ __('ui.search') }}
+                  </button>
               </div>
           </form>
 
@@ -24,7 +24,7 @@
       @auth
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Ciao, {{ Auth::user()->name }}
+          {{ __('ui.hello') }}, {{ Auth::user()->name }}
         </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a></li>
@@ -65,12 +65,12 @@
        @else 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Ciao utente!
+          {{ __('ui.helloUser') }}
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
+          <li><a class="dropdown-item" href="{{ route('login') }}">{{ __('ui.login') }}</a></li>
             <hr class="dropdown-divider">
-          <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
+          <li><a class="dropdown-item" href="{{ route('register') }}">{{ __('ui.register') }}</a></li>
         </ul>
       </li>
       @endauth
