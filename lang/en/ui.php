@@ -13,4 +13,6 @@ return
     'email'=>'Email',
     'password'=>'Password',
     'confirmPassword'=>'Confirm Password',
+    'Elettronica'=>'Electronic',
+    'Abbigliamento'=>'Dress',
 ];
