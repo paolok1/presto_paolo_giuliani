@@ -3,7 +3,7 @@
     <div class="row align-items-center">
       
       <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <h6 class="text-uppercase fw-bold mb-3">Seguici sui Social</h6>
+        <h6 class="text-uppercase fw-bold mb-3">{{ __('ui.followUs') }}</h6>
         <section class="d-flex justify-content-center flex-wrap">
           <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button">
             <i class="fab fa-facebook-f"></i>

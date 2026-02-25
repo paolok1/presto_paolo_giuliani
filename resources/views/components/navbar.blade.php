@@ -39,7 +39,7 @@
       @if(Auth::user()->is_revisor)
       <li class="nav-item">
           <a class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25" href="{{ route('revisor.index') }}">
-            Zona revisore
+            {{ __('ui.revisor') }}
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 {{ \App\Models\Article::toBeRevisedCount() }}
               </span>
@@ -48,8 +48,8 @@
       </li>
       @endif
       <li class="nav-item dropdown">
-        <a href="" class="nav-link dropdown-toggle" role="buttona" data-bs-toggle="dropdown" aria-expanded="false">
-          Categorie
+        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {{ __('ui.categories') }}
         </a>
         <ul class="dropdown-menu">
           @foreach ($categories as $category)
